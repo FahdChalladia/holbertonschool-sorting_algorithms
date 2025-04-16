@@ -21,12 +21,13 @@ arr[j] = temp;
  */
 void selection_sort(int *array, size_t size)
 {
-int i, j, min_idx, temp;
+size_t i, j;
+int min_idx;
 {
 for (i = 0; i < N - 1; i++)
 {
 min_idx = i;
-for (int j = i + 1; j < N; j++)
+for (j = i + 1; j < N; j++)
 {
 if (arr[j] < arr[min_idx])
 {
