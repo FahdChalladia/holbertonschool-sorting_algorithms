@@ -35,6 +35,8 @@ min_idx = j;
 }
 }
 swap(array, i, min_idx);
+if (i < size - 2)
+{
 print_array(array, size);
 }
 }
