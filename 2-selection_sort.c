@@ -24,17 +24,17 @@ void selection_sort(int *array, size_t size)
 size_t i, j;
 int min_idx;
 {
-for (i = 0; i < N - 1; i++)
+for (i = 0; i < size - 1; i++)
 {
 min_idx = i;
-for (j = i + 1; j < N; j++)
+for (j = i + 1; j < size; j++)
 {
-if (arr[j] < arr[min_idx])
+if (array[j] < array[min_idx])
 {
 min_idx = j;
 }
 }
-swap(arr, i, min_idx);
+swap(array, i, min_idx);
 print_array(array, size);
 }
 }
