@@ -8,7 +8,8 @@ Each task is implemented in its own C file, focusing on a specific operation on 
 
 - `0-bubble_sort.c` :
   Function that sorts an array of integers in ascending order using the Bubble sort algorithm.
-
+- `1-insertion_sort_list.c` :
+  Function that sorts a doubly linked list of integers in ascending order using the Insertion sort algorithm.
 ### Creator:
 
 **Fahd Challadia**  
