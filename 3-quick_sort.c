@@ -8,7 +8,7 @@
  * @j: The index of the second element to swap
  *
  */
-void swap(int *array, int i, int j)
+void swap(int *array, int i, int j , size_t size)
 {
 int temp = array[i];
 array[i] = array[j];
@@ -27,9 +27,10 @@ print_array(array, size);
  */
 int lomuto_partition(int *array, int low, int high, size_t size)
 {
-int pivot = array[high];
-int i = low - 1;
-for (int j = low; j < high; j++)
+int i, j, pivot;
+pivot = array[high];
+i = low - 1;
+for (j = low; j < high; j++)
 {
 if (array[j] < pivot)
 {
